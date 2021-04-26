@@ -14,7 +14,7 @@ article#featured_items {
 	padding: 20px;
 }
 
-.column {
+.grid_item {
 	float: left;
 	padding: 10px;
 	margin: 10px;
@@ -23,6 +23,14 @@ article#featured_items {
 	border-color: rgba(100, 100, 100, 0.6);
 	background-color: rgba(151, 151, 151, 0.4);
 	text-align: center;
+}
+
+.grid_item:hover {
+	background-color: rgba(151, 151, 151, 0.5);
+}
+
+.grid_item > p {
+	font: 1.2em Palatino, sans-serif;
 }
 
 article#bio {
@@ -43,7 +51,7 @@ article#bio p {
 /* Navigation Styles */
 nav {
 	display: table;
-	width: 5%;
+	width: 150px;
 	background-color: rgba(5, 5, 5, 0.1);
 }
 
