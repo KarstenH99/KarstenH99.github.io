@@ -6,23 +6,28 @@
 	display: grid;
 	grid-gap: 20px;
 }
-
+/* M2LO14. Progressive enhancement. Older rgb value defined first for older browsers before newer rgba, which will override the previous rgb on newer browsers. */
+/* M2LO15. Sets background and text color. */
 article {
+	color: rgb(5, 5, 5);
 	color: rgba(5, 5, 5, 0.6);
+	background-color: rgb(3, 3, 3);
 	background-color: rgba(5, 5, 5, 0.1);
 	text-align: center;
 	width: 70%;
 	margin: auto;
 }
-
+/* M2LO3. Style precedence - the .grid_item background-color takes precedence over the defined article background-color. */
+/* M2LO3. Style inheritance - text alignment is not specified for the .grid_item class, but it inherits the defined article text alignment. */
+/* M2LO6. CSS class selector. */
+/* M2LO12. Sets float, padding, margin and background color to determine appearance and location. */
 .grid_item {
 	float: left;
 	padding: 10px;
 	margin: 40px 40px 0px 40px;
 	background-color: rgba(151, 151, 151, 0.4);
-	text-align: center;
 }
-
+/* M2LO11. Psuedo-class. */
 .grid_item:last-of-type {
 	margin-bottom: 40px;
 }
@@ -38,7 +43,9 @@ article {
 .grid_item > p {
 	font: 1.2em Palatino, sans-serif;
 }
-
+/* M2LO5. Contextual selectors. Selects only the h1 within the bio article. */
+/* M2LO6. CSS id selector. */
+/* M2LO13. Font - changes type, size, and font stack. */
 article#bio h1 {
 	font: normal small-caps 1.5em 'Palatino Linotype', Palatino, sans-serif;
 }
@@ -53,7 +60,6 @@ article#contact {
 
 article#featured_items a:link, article#featured_items a:visited, article#featured_items a:active, article#featured_items a:hover {
 	color: rgba(5, 5, 5, 0.6);
-	text-decoration: none;
 	font: 1.2em Palatino, sans-serif;
 }
 
@@ -62,10 +68,21 @@ img#shop_item {
 	height: auto;
 }
 
+/* List Styles */
+ol.LO {
+	list-style-type: upper-alpha;
+}
+
+/* Link Style */
+/* M2LO7. Attribute selector other than id or class. */
+a[href] {
+	text-decoration: none;
+}
+
 /* Navigation Styles */
 nav {
 	display: table;
-	width: 10em;
+	width: 15em;
 	background-color: rgba(5, 5, 5, 0.1);
 }
 
@@ -83,11 +100,17 @@ nav > ul > li {
 
 nav > ul > li > a:link, nav > ul > li > a:visited {
 	color: rgb(151, 151, 151);
-	text-decoration: none;
 }
 
 nav > ul > li > a:active, nav > ul > li > a:hover {
 	color: rgba(5, 5, 5, 0.8);
-	text-decoration: none;
 	background-color: rgba(5, 5, 5, 0.2);
+}
+/* M2LO11. Psuedo-element. */
+nav > ul > li > a:active::before, nav > ul > li > a:hover::before {
+	content: "\2022";
+}
+
+nav > ul > li > a:active::after, nav > ul > li > a:hover::after {
+	content: "\2022";
 }
