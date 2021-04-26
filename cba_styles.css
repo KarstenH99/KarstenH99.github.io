@@ -7,22 +7,27 @@
 	grid-gap: 20px;
 }
 
-article#featured_items {
-	margin: auto;
+article {
+	color: rgba(5, 5, 5, 0.6);
 	background-color: rgba(5, 5, 5, 0.1);
-	width: 50%;
-	padding: 20px;
+	text-align: center;
+	width: 70%;
+	margin: auto;
 }
 
 .grid_item {
 	float: left;
 	padding: 10px;
-	margin: 10px;
+	margin: 40px 40px 0px 40px;
 	border-style: inset;
 	border-width: 5px;
 	border-color: rgba(100, 100, 100, 0.6);
 	background-color: rgba(151, 151, 151, 0.4);
 	text-align: center;
+}
+
+.grid_item:last-of-type {
+	margin-bottom: 40px;
 }
 
 .grid_item:hover {
@@ -33,19 +38,16 @@ article#featured_items {
 	font: 1.2em Palatino, sans-serif;
 }
 
-article#bio {
-	text-align: center;
-	background-color: rgba(5, 5, 5, 0.1);
-	width: 70%;
-	margin: auto;
-}
-
 article#bio h1 {
 	font: normal small-caps 1.5em 'Palatino Linotype', Palatino, sans-serif;
 }
 
 article#bio p {
 	font-size: 1.5em;
+}
+
+article#contact {
+	font: 1.5em Palatino, sans-serif;
 }
 
 /* Navigation Styles */
