@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!-- M1LO6. Use of html, head, and body tags. -->
+
+<html lang="en">
+	<head>
+		<!-- 
+		Name: Karsten Hald
+		Date: 4/6/2021
+		Course: CIS155
+		Instructor: Linda Epps
+		Assignment: Basic Site for CIS 155
+		-->
+		<meta charset="utf-8" />
+		<meta name="keywords" content="shopping, handmade, Anni, gift" />
+		<title>Home</title>
+		<link href="cba_styles.css" rel="stylesheet" /> <!-- M1LO8 -->
+		<style> <!-- M2LO4. Embedded style. -->
+			footer {
+				background-color: rgba(5, 5, 5, 0.1);
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<!-- M1LO12. Navigation list same accross all pages. -->
+		<!-- M1LO13. Site navigation. -->
+	
+		<nav>
+			<ul>
+				<li><a href="cba_homepage.html">Home</a></li>
+				<li><a href="cba_about.html">About</a></li>
+				<li><a href="cba_contact.html">Contact</a></li>
+				<li><a href="about.html">Project</a></li>
+			</ul>
+		</nav>
+		
+		<article id="featured_items" class="grid_container">
+			<div class="grid_item">
+				<a href="https://www.etsy.com/listing/837904718/crochet-jellyfish?ref=shop_home_recs_1"> <!-- M1LO13. External link. -->
+					<img src="jellyfish.jpg" alt="" id="shop_item" /> <!-- M1LO9 -->
+					<p>Crochet Jellyfish</p>
+				</a>
+			</div>
+			<div class="grid_item">
+				<h1>Item 2 picture</h1>
+				<p>Description</p>
+			</div>
+			<div class="grid_item">
+				<h1>Item 3 picture</h1>
+				<p>Description</p>
+			</div>
+			<div class="grid_item">
+				<h1>Item 4 picture</h1>
+				<p>Description</p>
+			</div>
+			<div class="grid_item">
+				<h1>Item 5 picture</h1>
+				<p>Description</p>
+			</div>
+			<div class="grid_item">
+				<h1>Item 6 picture</h1>
+				<p>Description</p>
+			</div>
+		</article>
+		<footer>
+		
+			<!-- M1LO13. Link to id on page. -->
+			<!-- M1LO10. Special characters. -->
+			<!-- M2LO4. Inline style. -->
+		
+			<a href="#top" style="text-decoration: none;">&bull; Back to Top &bull;</a>
+		</footer>
+	</body>
+</html>
