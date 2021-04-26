@@ -19,9 +19,6 @@ article {
 	float: left;
 	padding: 10px;
 	margin: 40px 40px 0px 40px;
-	border-style: inset;
-	border-width: 5px;
-	border-color: rgba(100, 100, 100, 0.6);
 	background-color: rgba(151, 151, 151, 0.4);
 	text-align: center;
 }
@@ -32,6 +29,10 @@ article {
 
 .grid_item:hover {
 	background-color: rgba(151, 151, 151, 0.5);
+	border-style: inset;
+	border-width: 5px;
+	border-color: rgba(100, 100, 100, 0.6);
+	margin: 35px 35px -5px 35px;
 }
 
 .grid_item > p {
@@ -50,10 +51,21 @@ article#contact {
 	font: 1.5em Palatino, sans-serif;
 }
 
+article#featured_items a:link, article#featured_items a:visited, article#featured_items a:active, article#featured_items a:hover {
+	color: rgba(5, 5, 5, 0.6);
+	text-decoration: none;
+	font: 1.2em Palatino, sans-serif;
+}
+
+img#shop_item {
+	width: 20%;
+	height: auto;
+}
+
 /* Navigation Styles */
 nav {
 	display: table;
-	width: 150px;
+	width: 10em;
 	background-color: rgba(5, 5, 5, 0.1);
 }
 
