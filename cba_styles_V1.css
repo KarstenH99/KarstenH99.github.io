@@ -40,10 +40,6 @@ article {
 	margin: 35px 35px -5px 35px;
 }
 
-.grid_item:last-of-type:hover {
-	margin: 35px 35px 35px 35px;
-}
-
 .grid_item > p {
 	font: 1.2em Palatino, sans-serif;
 }
@@ -86,7 +82,7 @@ a[href] {
 /* Navigation Styles */
 nav {
 	display: table;
-	width: 17em;
+	width: 15em;
 	background-color: rgba(5, 5, 5, 0.1);
 }
 
@@ -100,11 +96,10 @@ nav > ul {
 nav > ul > li {
 	display: table-cell;
 	text-align: center;
-	font: 1.2em Palatino, sans-serif;
 }
 
 nav > ul > li > a:link, nav > ul > li > a:visited {
-	color: rgba(5, 5, 5, 0.5);
+	color: rgb(151, 151, 151);
 }
 
 nav > ul > li > a:active, nav > ul > li > a:hover {
