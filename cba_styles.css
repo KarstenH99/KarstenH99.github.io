@@ -1,55 +1,113 @@
 @charset "utf-8";
 
+@font-face {
+	font-family: Satisfy;
+	src: url('Satisfy/Satisfy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Patua_One;
+	src: url('Patua_One/PatuaOne-Regular.ttf') format('truetype');
+}
 
 /* Structure Styles */
-.grid_container {
-	display: grid;
-	grid-gap: 20px;
+* {
+	box-sizing: border-box;
 }
-/* M2LO14. Progressive enhancement. Older rgb value defined first for older browsers before newer rgba, which will override the previous rgb on newer browsers. */
-/* M2LO15. Sets background and text color. */
+
+body {
+	background: radial-gradient(rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0.3));
+}
+
+header img {
+	width: 100%;
+}
+
+#header-image {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+#header-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font: 5em Satisfy, sans-serif;
+	text-shadow: gray 4px 4px 10px;
+}
+
 article {
 	color: rgb(5, 5, 5);
 	color: rgba(5, 5, 5, 0.6);
-	background-color: rgb(3, 3, 3);
 	background-color: rgba(5, 5, 5, 0.1);
 	text-align: center;
 	width: 70%;
-	margin: auto;
+	margin: 10px auto;
+	box-shadow: rgba(100, 100, 100, 0.6) 5px 5px 4px, inset white 5px 5px 4px;
+	border-radius: 5%;
 }
-/* M2LO3. Style precedence - the .grid_item background-color takes precedence over the defined article background-color. */
-/* M2LO3. Style inheritance - text alignment is not specified for the .grid_item class, but it inherits the defined article text alignment. */
-/* M2LO6. CSS class selector. */
-/* M2LO12. Sets float, padding, margin and background color to determine appearance and location. */
-.grid_item {
+
+div.row {
+	clear: both;
+}
+
+div.row::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+div[class^="col-"] {
 	float: left;
-	padding: 10px;
-	margin: 40px 40px 0px 40px;
-	background-color: rgba(151, 151, 151, 0.4);
-}
-/* M2LO11. Psuedo-class. */
-.grid_item:last-of-type {
-	margin-bottom: 40px;
+	width: 50%;
 }
 
-.grid_item:hover {
-	background-color: rgba(151, 151, 151, 0.5);
-	border-style: inset;
-	border-width: 5px;
-	border-color: rgba(100, 100, 100, 0.6);
-	margin: 35px 35px -5px 35px;
+.item {
+	width: 75%;
+	float: left;
+	margin: 10px auto;
+	box-shadow: rgba(5, 5, 5, 0.12) 0px 0px 10px;
+	border: 2px inset rgba(5, 5, 5, 0.12);
+	border-radius: 5%;
+	margin-top: 5%;
+	margin-left: 12.5%;
 }
 
-.grid_item:last-of-type:hover {
-	margin: 35px 35px 35px 35px;
+.item:last-of-type {
+	margin-bottom: 5%;
 }
 
-.grid_item > p {
+.item:hover {
+	background-color: rgba(5, 5, 5, 0.1);
+	box-shadow: rgba(100, 100, 100, 0.6) 0px 0px 4px 5px;
+}
+
+.item img {
+	max-width: 100%;
+	border: 1px solid rgba(5, 5, 5, 0.1);
+	border-radius: 5%/3.7%;
+}
+
+.item figcaption {
+	margin-bottom: 5px;
+}
+
+footer {
+	clear: both;
+	background-color: rgba(5, 5, 5, 0.1);
+}
+
+/*Text Styles*/
+nav ul li {
+	font: 1.2em Patua_One;
+}
+
+.item > p {
 	font: 1.2em Palatino, sans-serif;
 }
-/* M2LO5. Contextual selectors. Selects only the h1 within the bio article. */
-/* M2LO6. CSS id selector. */
-/* M2LO13. Font - changes type, size, and font stack. */
+
 article#bio h1 {
 	font: normal small-caps 1.5em 'Palatino Linotype', Palatino, sans-serif;
 }
@@ -78,44 +136,44 @@ ol.LO {
 }
 
 /* Link Style */
-/* M2LO7. Attribute selector other than id or class. */
+
 a[href] {
 	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: rgba(5, 5, 5, 0.5);
+}
+
+a:active, a:hover {
+	color: rgba(5, 5, 5, 0.8);
+	background-color: rgba(5, 5, 5, 0.2);
 }
 
 /* Navigation Styles */
 nav {
 	display: table;
-	width: 17em;
+	width: 100%;
 	background-color: rgba(5, 5, 5, 0.1);
 }
 
 nav > ul {
-	line-height: 2em;
 	list-style-type: none;
-	padding-left: 10px;
 	display: table-row;
 }
 
-nav > ul > li {
+nav > ul li {
 	display: table-cell;
+	float: left;
 	text-align: center;
-	font: 1.2em Palatino, sans-serif;
+	width: 25%;
 }
 
-nav > ul > li > a:link, nav > ul > li > a:visited {
-	color: rgba(5, 5, 5, 0.5);
-}
-
-nav > ul > li > a:active, nav > ul > li > a:hover {
+nav > ul li:hover {
+	display: table-cell;
+	float: left;
+	text-align: center;
+	width: 25%;
 	color: rgba(5, 5, 5, 0.8);
 	background-color: rgba(5, 5, 5, 0.2);
-}
-/* M2LO11. Psuedo-element. */
-nav > ul > li > a:active::before, nav > ul > li > a:hover::before {
-	content: "\2022";
-}
-
-nav > ul > li > a:active::after, nav > ul > li > a:hover::after {
-	content: "\2022";
 }
