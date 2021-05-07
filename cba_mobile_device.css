@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+div[id^="col-"] {
+	clear: both;
+	width: 100%;
+}
