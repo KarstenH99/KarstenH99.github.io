@@ -1,5 +1,16 @@
 @charset "utf-8";
 
+/* 
+Name: Karsten Hald
+Date Started: 4/6/2021
+Last Edited: 5/7/2021
+Course: CIS155
+Instructor: Linda Epps
+Assignment: Basic Site for CIS 155 
+*/
+
+/*Fonts obtained from Google Fonts. Licenses included.*/
+
 @font-face {
 	font-family: Satisfy;
 	src: url('Satisfy/Satisfy-Regular.ttf') format('truetype');
@@ -10,13 +21,18 @@
 	src: url('Patua_One/PatuaOne-Regular.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: Crimson_Text;
+	src: url('Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+}
+
 /* Structure Styles */
 * {
 	box-sizing: border-box;
 }
 
 body {
-	background: radial-gradient(rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0.3));
+	background: linear-gradient(rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0.3));
 }
 
 header img {
@@ -44,8 +60,11 @@ article {
 	background-color: rgba(5, 5, 5, 0.1);
 	text-align: center;
 	width: 70%;
-	margin: 10px auto;
-	box-shadow: rgba(100, 100, 100, 0.6) 5px 5px 4px, inset white 5px 5px 4px;
+	margin: 2% auto;
+	box-shadow: rgba(100, 100, 100, 0.15) 0px 0px 20px 9px, rgba(100, 100, 100, 0.6) 5px 5px 4px, inset rgba(255, 255, 255, 0.5) 5px 5px 4px;
+}
+
+article#featured_items {
 	border-radius: 5%;
 }
 
@@ -59,7 +78,7 @@ div.row::after {
 	display: table;
 }
 
-div[class^="col-"] {
+div[id^="col-"] {
 	float: left;
 	width: 50%;
 }
@@ -85,39 +104,92 @@ div[class^="col-"] {
 }
 
 .item img {
-	max-width: 100%;
+	max-width: 80%;
+	margin-top: 2%;
 	border: 1px solid rgba(5, 5, 5, 0.1);
 	border-radius: 5%/3.7%;
+	box-shadow: rgba(5, 5, 5, 0.15) 0px 0px 2px 2px;
 }
 
 .item figcaption {
-	margin-bottom: 5px;
+	margin-bottom: 2%;
+}
+
+article#bio > img {
+	width: 20%;
+	float: left;
+	margin: 1%;
+}
+
+article#bio::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+div#shop_left {
+	clear: both;
+	float: left;
+	width: 85%;
+}
+
+div#shop_right {
+	float: left;
+	width: 15%;
+}
+
+section#reviews {
+	float: left;
+	width: 15%;
+}
+
+a#to_top {
+	position: fixed;
+	bottom: 10px;
 }
 
 footer {
+	padding-bottom: 1%;
 	clear: both;
-	background-color: rgba(5, 5, 5, 0.1);
+	background-color: rgba(105, 105, 105, 0.3);
 }
 
-/*Text Styles*/
+footer::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/* Text Styles */
 nav ul li {
 	font: 1.2em Patua_One;
 }
 
-.item > p {
+article#featured_items > h1 {
+	font: 2em Patua_One;
+	position: relative;
+	top: 20px;
+	text-shadow: rgba(5, 5, 5, 0.3) 2px 2px 4px;
+}
+
+.item > figcaption {
 	font: 1.2em Palatino, sans-serif;
 }
 
 article#bio h1 {
-	font: normal small-caps 1.5em 'Palatino Linotype', Palatino, sans-serif;
+	font: normal 1.5em Patua_One, Palatino, sans-serif;
+	line-height: 2em;
 }
 
 article#bio p {
-	font-size: 1.5em;
+	font: 1.5em Crimson_Text, serif;
+	line-height: 1.3em;
 }
 
 article#contact {
-	font: 1.5em Palatino, sans-serif;
+	text-align: left;
+	font: 1.5em Crimson_Text, serif;
+	line-height: 1.2em;
 }
 
 article#featured_items a:link, article#featured_items a:visited, article#featured_items a:active, article#featured_items a:hover {
@@ -125,9 +197,21 @@ article#featured_items a:link, article#featured_items a:visited, article#feature
 	font: 1.2em Palatino, sans-serif;
 }
 
-img#shop_item {
-	width: 20%;
-	height: auto;
+footer h1 {
+	font: 1.3em Patua_One;
+	line-height: 2em;
+}
+
+footer p {
+	font: 1.2em 'Palatino Linotype', Palatino, sans-serif;
+	color: rgba(5, 5, 5, 0.5);
+	line-height: 1.5em;
+}
+
+section#contact {
+	float: left;
+	width: 33.34%;
+	text-align: center;
 }
 
 /* List Styles */
@@ -135,7 +219,7 @@ ol.LO {
 	list-style-type: upper-alpha;
 }
 
-/* Link Style */
+/* Link Styles */
 
 a[href] {
 	text-decoration: none;
@@ -150,30 +234,52 @@ a:active, a:hover {
 	background-color: rgba(5, 5, 5, 0.2);
 }
 
+a#to_top {
+	font-size: 2em;
+	width: 2%;
+	text-align: center;
+}
+
+a#to_top:hover, a#to_top:active {
+	color: rgba(5, 5, 5, 0.5);
+	background: transparent;
+}
+
+nav.vertical_nav a:active, nav.vertical_nav a:hover {
+	color: rgba(5, 5, 5, 0.5);
+	background: transparent;
+}
+
 /* Navigation Styles */
-nav {
+nav.horizontal_nav {
 	display: table;
 	width: 100%;
 	background-color: rgba(5, 5, 5, 0.1);
 }
 
-nav > ul {
+nav.horizontal_nav > ul {
 	list-style-type: none;
 	display: table-row;
 }
 
-nav > ul li {
+nav.horizontal_nav > ul li {
 	display: table-cell;
 	float: left;
 	text-align: center;
-	width: 25%;
+	width: 20%;
 }
 
-nav > ul li:hover {
+nav.horizontal_nav > ul li:hover {
 	display: table-cell;
 	float: left;
 	text-align: center;
-	width: 25%;
+	width: 20%;
 	color: rgba(5, 5, 5, 0.8);
 	background-color: rgba(5, 5, 5, 0.2);
+}
+
+nav.vertical_nav {
+	float: left;
+	width: 33.33%;
+	text-align: center;
 }
