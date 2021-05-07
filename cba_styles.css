@@ -267,6 +267,7 @@ nav.horizontal_nav > ul li {
 	float: left;
 	text-align: center;
 	width: 20%;
+	height: 1.5em;
 }
 
 nav.horizontal_nav > ul li:hover {
