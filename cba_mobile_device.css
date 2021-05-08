@@ -16,8 +16,8 @@
 }
 
 /* Collapsible menu code from Nadia Hogg on codeburst.io */
-.horizontal_nav {
-	display: none;
+nav.horizontal_nav {
+	display: none !important;
 }
 
 .collapsible_menu {
