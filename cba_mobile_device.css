@@ -36,7 +36,7 @@ nav.horizontal_nav {
 .collapsible_menu label {
 	float: right;
 	cursor: pointer;
-	font-size: 5em;
+	font-size: 3em;
 }
 
 input#menu {
