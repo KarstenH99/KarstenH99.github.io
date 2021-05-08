@@ -309,6 +309,7 @@ a:link, a:visited {
 a:active, a:hover {
 	color: rgba(5, 5, 5, 0.8);
 	background-color: rgba(5, 5, 5, 0.2);
+	height:100%;
 }
 
 .item a:active, .item a:hover {
@@ -351,14 +352,7 @@ nav.horizontal_nav > ul li {
 	height: 1.5em;
 }
 
-nav.horizontal_nav > ul li:hover {
-	display: table-cell;
-	float: left;
-	text-align: center;
-	width: 20%;
-	color: rgba(5, 5, 5, 0.8);
-	background-color: rgba(5, 5, 5, 0.2);
-}
+
 
 nav.vertical_nav {
 	float: left;
