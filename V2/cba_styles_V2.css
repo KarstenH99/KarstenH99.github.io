@@ -183,7 +183,7 @@ footer {
 	background-color: rgba(105, 105, 105, 0.3);
 }
 
-footer hr {
+footer hr.nav_bar {
 	width: 25%;
 }
 
@@ -351,8 +351,6 @@ nav.horizontal_nav > ul li {
 	width: 20%;
 	height: 1.5em;
 }
-
-
 
 nav.vertical_nav {
 	float: left;
