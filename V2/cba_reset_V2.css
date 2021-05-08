@@ -9,10 +9,15 @@ Instructor: Linda Epps
 Assignment: Basic Site for CIS 155 
 */
 
+/* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules) Reset the below rules. */
+
 article, figcaption, figure,
 footer, header, nav, section, a { 
    display: block;
 }
+
+/* M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is) 
+	Allows older browsers to still set the box-sizing style to border-box.*/
 
 article, body, div, em, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, html, img, li, nav, ol, p, ul, section {
    margin: 0;

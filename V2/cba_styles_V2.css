@@ -13,23 +13,25 @@ Assignment: Basic Site for CIS 155
 
 @font-face {
 	font-family: Satisfy;
-	src: url('Satisfy/Satisfy-Regular.ttf') format('truetype');
+	src: url('../Satisfy/Satisfy-Regular.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: Patua_One;
-	src: url('Patua_One/PatuaOne-Regular.ttf') format('truetype');
+	src: url('../Patua_One/PatuaOne-Regular.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: Crimson_Text;
-	src: url('Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+	src: url('../Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
 }
 
 /* Structure Styles */
 * {
 	box-sizing: border-box;
 }
+
+/* Demonstrate the use of gradients (CSS) */
 
 body {
 	background: linear-gradient(rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0.3));
@@ -39,13 +41,31 @@ header img {
 	width: 100%;
 }
 
+/* M3LO8B Demonstrate relative positioning (CSS, note use in your CSS and describe what its impact is on the HTML) 
+	In this case, the image keeps its position, but the relative positioning allows other elements to overlap it.*/
+
+/* M4LO6D emonstrate the use of opacity/transparency for images (see 4.2) (CSS) 
+	Makes the image less opaque. In this case it makes the text a bit harder to read and mutes the colors, I wouldn't 
+	keep the opacity modifier in my final design.*/
+
+/* M4LO2 Demonstrate the use of background images (CSS) 
+	There is a background image positioned in the top left, set to a height of 50px with the width automatically scaled to
+	keep the proportions. It is set to not repeat so it stays not visible. At the moment there is nowhere on my page I want
+	a background image, though I do plan on adding some later.*/
+
 #header-image {
+	background: url(header.jpg) top left / auto 50px no-repeat;
 	position: relative;
 	text-align: center;
+	opacity: 0.7;
 	color: white;
 }
 
+/* M3LO8A Demonstrate absolute positioning (CSS, note use in your CSS and describe what its impact is on the HTML) 
+	In this case, the absolute positioning allows other elements to fill its place after it is re-positioned.*/
+
 #header-text {
+	color: white;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -58,6 +78,10 @@ header img {
 	display: none;
 }
 
+/* M4LO5 Demonstrate the use of text or box shadowing (CSS, note one of these two in your CSS and explain its impact on the HTML) 
+	Adds a few shadows to the article element. An inset white shadow on the top and left, a dark shadow on the right and bottom, and a light
+	shadow all around. */
+
 article {
 	color: rgb(5, 5, 5);
 	color: rgba(5, 5, 5, 0.6);
@@ -68,19 +92,30 @@ article {
 	box-shadow: rgba(100, 100, 100, 0.15) 0px 0px 20px 9px, rgba(100, 100, 100, 0.6) 5px 5px 4px, inset rgba(255, 255, 255, 0.5) 5px 5px 4px;
 }
 
+/* M4LO3 Demonstrate the use of rounded corners for borders (CSS) */
+
 article#featured_items {
 	border-radius: 5%;
 }
 
+/* M3LO3 Demonstrate a clearing floats (CSS, note where you have used a clear and what its impact is) 
+	Part of the grid, ensures grid rows are individual rows.*/
+
 div.row {
 	clear: both;
 }
+
+/* M3LO6 Demonstrate formatting a grid (CSS, note the CSS rules that do this and what their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids) 
+	Div-class based grids separate content into rows and columns, styled as below.*/
 
 div.row::after {
 	clear: both;
 	content: "";
 	display: table;
 }
+
+/* M3LO2 Demonstrate floating elements (CSS, note where you have specified a floating element and what its impact is) 
+	Lets the columns float next to each other.*/
 
 div[id^="col-"] {
 	float: left;
@@ -106,6 +141,9 @@ div[id^="col-"] {
 	box-shadow: rgba(100, 100, 100, 0.6) 0px 0px 4px 5px;
 }
 
+/* M4LO8 Demonstrate the use of transformations for 2D or 3D images (CSS, note one of these two in your CSS and explain its impact on the HTML) 
+	Scales the image on the X-axis to better fit the box.*/
+
 .item img {
 	max-width: 80%;
 	margin-top: 2%;
@@ -130,6 +168,9 @@ article#bio::after {
 	content: "";
 	display: table;
 }
+
+/* M3LO9Demonstrate fixed, static, or inherited positioning (CSS, note explicit use of one of the three in your CSS and what the impact is on the HTML) 
+	Fixed positioning keeps the item in place, even while scrolling so it is always visible.*/
 
 a#to_top {
 	position: fixed;
