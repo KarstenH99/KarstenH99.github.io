@@ -183,6 +183,10 @@ footer {
 	background-color: rgba(105, 105, 105, 0.3);
 }
 
+footer hr {
+	width: 25%;
+}
+
 footer::after {
 	clear: both;
 	content: "";
