@@ -28,6 +28,7 @@ nav.horizontal_nav {
 }
 
 .collapsible_menu label {
+	float: right;
 	cursor: pointer;
 	font-size: 5em;
 }
