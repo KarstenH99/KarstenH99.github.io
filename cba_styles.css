@@ -238,6 +238,10 @@ a:active, a:hover {
 	background-color: rgba(5, 5, 5, 0.2);
 }
 
+.item a:active, .item a:hover {
+	background-color: transparent;
+}
+
 a#to_top {
 	font-size: 2em;
 	width: 2%;
