@@ -27,7 +27,7 @@ nav.horizontal_nav {
 	border-bottom: 2px solid;
 }
 
-.menu_content::after {
+#menu {
 	clear: both;
 	content: "";
 	display: table;
