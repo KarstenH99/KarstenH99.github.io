@@ -10,7 +10,7 @@ Assignment: Basic Site for CIS 155
 */
 
 article, figcaption, figure,
-footer, header, nav, section{ 
+footer, header, nav, section, a{ 
    display: block;
 }
 
