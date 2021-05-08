@@ -27,6 +27,12 @@ nav.horizontal_nav {
 	border-bottom: 2px solid;
 }
 
+.collapsible_menu::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
 .collapsible_menu label {
 	float: right;
 	cursor: pointer;
