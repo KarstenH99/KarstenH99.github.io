@@ -36,7 +36,7 @@ nav.horizontal_nav {
 .collapsible_menu label {
 	float: right;
 	cursor: pointer;
-	font-size: 3em;
+	font-size: 5em;
 }
 
 input#menu {
@@ -55,7 +55,7 @@ input#menu:checked ~ .menu_content {
 	clear: both;
 	max-height: 0;
 	overflow: hidden;
-	font: 4em Patua_One;
+	font: 2.5em Patua_One;
 	padding: 0px 0px 0px 50px;
 	line-height: 2em;
 }
