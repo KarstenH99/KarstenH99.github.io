@@ -15,6 +15,7 @@
 	src: url('Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
 }
 
+/* Collapsible menu code from Nadia Hogg on codeburst.io */
 .horizontal_nav {
 	display: none;
 }
@@ -28,7 +29,7 @@
 
 .collapsible_menu label {
 	cursor: pointer;
-	font-size: 3em;
+	font-size: 5em;
 }
 
 input#menu {
@@ -46,8 +47,9 @@ input#menu:checked ~ .menu_content {
 .menu_content {
 	max-height: 0;
 	overflow: hidden;
-	font: 1.2em Patua_One;
+	font: 2em Patua_One;
 	padding: 0px 0px 0px 50px;
+	line-height: 2em;
 }
 
 .collapsible_menu ul {
