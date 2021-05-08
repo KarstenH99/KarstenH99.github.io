@@ -27,7 +27,7 @@ nav.horizontal_nav {
 	border-bottom: 2px solid;
 }
 
-#menu::after {
+.collapsible_menu::after {
 	clear: both;
 	content: "";
 	display: table;
