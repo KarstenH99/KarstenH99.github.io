@@ -435,7 +435,7 @@ nav.horizontal_nav ul.menu li:hover {
 /* M5LO3 Use media queries to format a page differently for phones vs. PCs.
 Reformats for mobile devices. Still WIP, but on featured items page makes it single column, on all pages pulldown nav menu and single column footer. */
 /* Mobile Styles */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
 	/* Structure */
 	#header-text {
 		font-size: 7em;
