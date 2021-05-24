@@ -141,6 +141,10 @@ footer {
 	width: 100%;
 }
 
+hr {
+	width: 25%;
+}
+
 footer::after {
 	clear: both;
 	content: "";

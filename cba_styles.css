@@ -141,6 +141,10 @@ footer {
 	width: 100%;
 }
 
+hr {
+	width: 25%;
+}
+
 footer::after {
 	clear: both;
 	content: "";
@@ -151,7 +155,8 @@ footer::after {
 /* M5LO6 Explain the difference between a flexbox container and a flexbox item. M5LO7 Describe properties of flexbox containers. M5LO8 Describe properties of flexbox items.
 	The container is something like a wrapper for the items; it defines the region the items occupy or fill. Some properties of flwxbox containers include the flex display,
 	and the flex direction and wrap. Some flexbox item properties include the flex grow, shrink, and basis. */
-/* About Page Styles */
+
+	/* About Page Styles */
 /* Structure */
 body#project_about {
 	display: flex;
