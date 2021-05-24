@@ -15,7 +15,6 @@
 		<title>Contact</title>
 		<link href="cba_reset.css" rel="stylesheet" />
 		<link href="cba_styles.css" rel="stylesheet" />
-		<link href="cba_mobile_device.css" media="only screen and (max-device-width: 480px)" rel="stylesheet" />
 	</head>
 	
 	<body>
@@ -27,28 +26,18 @@
 				</div>
 			</div>
 			<nav class="horizontal_nav">
-				<ul>
-					<a href="index.html"><li>Home</li></a>
-					<a href="cba_shop_home.html"><li>Shop</li></a>
-					<a href="cba_about.html"><li>About</li></a>
-					<a href="cba_contact.html"><li>Contact</li></a>
-					<a href="about.html"><li>Project</li></a>
+				<ul id="collapsible">
+					<li><a href="#" class="menuTitle">Menu</a>
+						<ul class="menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="cba_shop_home.html">Shop</a></li>
+							<li><a href="cba_about.html">About</a></li>
+							<li><a href="cba_contact.html">Contact</a></li>
+							<li><a href="about.html">Project</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
-			
-			<div class="collapsible_menu">
-				<input type="checkbox" id="menu">
-				<label for="menu">&equiv;</label>
-				<div class="menu_content">
-					<ul>
-						<a href="index.html"><li>Home</li></a>
-						<a href="cba_shop_home.html"><li>Shop</li></a>
-						<a href="cba_about.html"><li>About</li></a>
-						<a href="cba_contact.html"><li>Contact</li></a>
-						<a href="about.html"><li>Project</li></a>
-					</ul>
-				</div>
-			</div>
 		</header>
 		
 		<article id="contact">
@@ -75,7 +64,7 @@
 					<li><a href="#">Reviews</a></li>
 				</ul>
 			</nav>
-			<section id="contact">
+			<section class="vertical_nav">
 				<h1>Questions? Contact me:</h1>
 				<hr width="25%">
 				<p>phone: phone number</p>
