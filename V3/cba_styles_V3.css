@@ -13,17 +13,17 @@ Assignment: Basic Site for CIS 155
 
 @font-face {
 	font-family: Satisfy;
-	src: url('Satisfy/Satisfy-Regular.ttf') format('truetype');
+	src: url('../Satisfy/Satisfy-Regular.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: Patua_One;
-	src: url('Patua_One/PatuaOne-Regular.ttf') format('truetype');
+	src: url('../Patua_One/PatuaOne-Regular.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: Crimson_Text;
-	src: url('Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+	src: url('../Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
 }
 
 /* Structure Styles */
