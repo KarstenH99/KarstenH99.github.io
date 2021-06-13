@@ -4,7 +4,7 @@
 		<!-- 
 		Name: Karsten Hald
 		Date Started: 4/6/2021
-		Last Edited: 5/7/2021
+		Last Edited: 6/12/2021
 		Course: CIS155
 		Instructor: Linda Epps
 		Assignment: Basic Site for CIS 155
@@ -41,7 +41,29 @@
 		</header>
 		
 		<article id="contact">
-			<p>Contact form will go here. Don't know how to format it and write the scripts to get it working yet though.</p>
+			<p>Please send a message if you experience a problem with your order, wish to make a custom order, or need to get in contact for another reason!</p>
+			<form action="http://www.example.com/cg/register" method="GET">
+				
+				<!-- M7LO5 Demonstrate the use of a text box in a form. -->
+				<input name="name" id="nameBox" type="text" placeholder="Name" required />
+				
+				<!-- M7LO8 Demonstrate the use of a selection list in a form. -->
+				<select name="reason" id="reasonBox" required>
+					<option value="select">&laquo;Select an option&raquo;</option>
+					<option value="incorrect">Received incorrect item</option>
+					<option value="no-show">Item never arrived</option>
+					<option value="custom">Custom order</option>
+					<option value="other">Other</option>
+				</select>
+				
+				<input name="email" id="emailBox" type="email" placeholder="Email" required />
+
+				<!-- M7LO9 Demonstrate the use of a text area in a form. -->
+				<textarea name="contact" id="contactBox" placeholder="Message" required></textarea>
+
+				<!-- M7LO10 Demonstrate the use of a submit button in a form. -->
+				<p><input type="submit" value="submit" /></p>
+			</form>
 		</article>
 		
 		<footer>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- 
+		Name: Karsten Hald
+		Date Started: 4/6/2021
+		Last Edited: 6/12/2021
+		Course: CIS155
+		Instructor: Linda Epps
+		Assignment: Basic Site for CIS 155
+		-->
+		<meta charset="utf-8" />
+		<meta name="keywords" content="shopping, handmade, Anni, gift" />
+		<meta name="author" content="Karsten Hald">
+		<title>Contact</title>
+		<link href="cba_reset_V4.css" rel="stylesheet" />
+		<link href="cba_styles_V4.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<header>
+			<div id="header-image">
+				<img src="header.jpg" alt="" />
+				<div id="header-text">
+					CreationsbyAnni
+				</div>
+			</div>
+			<nav class="horizontal_nav">
+				<ul id="collapsible">
+					<li><a href="#" class="menuTitle">Menu</a>
+						<ul class="menu">
+							<li><a href="index_V4.html">Home</a></li>
+							<li><a href="cba_shop_home_V4.html">Shop</a></li>
+							<li><a href="cba_about_V4.html">About</a></li>
+							<li><a href="cba_contact_V4.html">Contact</a></li>
+							<li><a href="about_V4.html">Project</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<article id="contact">
+			<p>Please send a message if you experience a problem with your order, wish to make a custom order, or need to get in contact for another reason!</p>
+			<form action="http://www.example.com/cg/register" method="GET">
+				
+				<!-- M7LO5 Demonstrate the use of a text box in a form. -->
+				<input name="name" id="nameBox" type="text" placeholder="Name" required />
+				
+				<!-- M7LO8 Demonstrate the use of a selection list in a form. -->
+				<select name="reason" id="reasonBox" required>
+					<option value="select">&laquo;Select an option&raquo;</option>
+					<option value="incorrect">Received incorrect item</option>
+					<option value="no-show">Item never arrived</option>
+					<option value="custom">Custom order</option>
+					<option value="other">Other</option>
+				</select>
+				
+				<input name="email" id="emailBox" type="email" placeholder="Email" required />
+
+				<!-- M7LO9 Demonstrate the use of a text area in a form. -->
+				<textarea name="contact" id="contactBox" placeholder="Message" required></textarea>
+
+				<!-- M7LO10 Demonstrate the use of a submit button in a form. -->
+				<p><input type="submit" value="submit" /></p>
+			</form>
+		</article>
+		
+		<footer>
+			<hr>
+			<nav class="vertical_nav">
+				<h1>Products</h1>
+				<hr>
+				<ul>
+					<li><a href="#">Gifts</a></li>
+					<li><a href="#">Custom Order</a></li>
+					<li><a href="#">Specials</a></li>
+				</ul>
+			</nav>
+			<nav class="vertical_nav">
+				<h1>Shop</h1>
+				<hr>
+				<ul>
+					<li><a href="cba_about_V4.html">About Me</a></li>
+					<li><a href="#">Social Media</a></li>
+					<li><a href="#">Reviews</a></li>
+				</ul>
+			</nav>
+			<section class="vertical_nav">
+				<h1>Questions? Contact me:</h1>
+				<hr>
+				<p>phone: phone number</p>
+				<p>email: email address</p>
+			</section>
+		</footer>
+	</body>
+</html>
