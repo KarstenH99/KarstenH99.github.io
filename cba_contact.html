@@ -42,13 +42,15 @@
 		
 		<article id="contact">
 			<p>Please send a message if you experience a problem with your order, wish to make a custom order, or need to get in contact for another reason!</p>
+
+			<!-- Do not put sensitive info in the form. While the form does not use or process information, it uses the GET method, which is inherently insecure. -->
 			<form action="http://www.example.com/cg/register" method="GET">
 				
 				<!-- M7LO5 Demonstrate the use of a text box in a form. -->
 				<input name="name" id="nameBox" type="text" placeholder="Name" required />
 				
 				<!-- M7LO8 Demonstrate the use of a selection list in a form. -->
-				<select name="reason" id="reasonBox" required>
+				<select name="reason" id="reasonBox" size="5" required>
 					<option value="select">&laquo;Select an option&raquo;</option>
 					<option value="incorrect">Received incorrect item</option>
 					<option value="no-show">Item never arrived</option>
